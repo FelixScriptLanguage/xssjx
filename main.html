@@ -1,1 +1,39 @@
-
+<meta charset="UTF-8">
+<h1>xss初级教学</h1>
+<h2>目标：在靶场插入小猪图片</h2>
+<br/>
+<h3>1.打开靶场</h3>
+<img src="1.jpg" width="300"/>
+<h3>2.复制网址</h3>
+<br/>
+<img src="2.jpg" width="300"/>
+<br/>
+<h3>期间可能会弹出这个界面：</h3>
+<img src="3.jpg" width="300"/>
+<h3>点击允许即可</h3>
+<br/>
+<h3>输入网址</h3>
+<img src="4.jpg" width="300"/>
+<br/>
+<br/>
+<h3>我们发现可以留言</h3>
+<img src="5.jpg" width="800"/>
+<br/>
+<h3>发现存在xss漏洞</h3>
+<h3><img src="6.jpg" width="300"/>------><img src="7.jpg" width="300"/></h3>
+<br/>
+<br/>
+<br/>
+<h3>在百度搜索图片</h3>
+<img src="8.jpg" width="800"/>
+<h3>复制图片链接</h3>
+<br/>
+<br/>
+<br/>
+<h3>在输入框输入：&lt;img src="https://5b0988e595225.cdn.sohucs.com/images/20191122/85e834125ccd4738be0b3202f80368df.jpeg"&gt;<h3/>
+<img src="9.jpg" width="300"/>
+<br/>
+<br/>
+<br/>
+<h3>成功显示:</h3>
+<img src="10.jpg" width="300"/>
